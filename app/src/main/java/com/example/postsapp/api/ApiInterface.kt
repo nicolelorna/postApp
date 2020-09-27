@@ -1,11 +1,11 @@
-package com.example.postsapp.api
+package com.example.postapp.api
 
-
-//import  ke.co.postapp.models.post
-//import retrofit2.Response
-//import retrofit2.http.GET
+import com.example.postapp.model.Post
+import retrofit2.Response
+import retrofit2.http.GET
 
 interface ApiInterface {
-    @GET(value:"posts")
+
+    @GET("posts")
     suspend fun getPosts(): Response<List<Post>>
 }
